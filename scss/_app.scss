@@ -1,0 +1,146 @@
+.logo {
+    order: 2;
+    width: 14rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+.theme-buttons {
+    order: 1;
+
+    @include mediaq('lg') {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+}
+
+.app-wrapper {
+    order: 3;
+    background-color: $color-white;
+    padding: 3rem 1.25rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 100%;
+    
+    @include mediaq(xs){
+        padding: 4rem;
+        width: 90%;
+        max-width: 84rem;
+    }
+
+    @include mediaq(md) {
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+}
+
+.app-fields {
+    
+
+    @include mediaq('lg') {
+        display: grid;
+    gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        grid-template-areas: 
+                "bill calc"
+                "tip calc"
+                "num calc";
+    }
+}
+
+.app-field {
+    position: relative;
+    margin-bottom: 2rem;
+
+    p:first-of-type {
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .app-input {
+        border: 0;
+        background-color: $color-very-light-gray-cyan;
+        text-align: right;
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 1.75rem;
+        color: $color-dark-gray-cyan;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+    .app-field-icon {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 7%;
+        top: 70%;
+    }
+}
+
+.app-field-tips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+
+
+    .btn-tip {
+        text-align: center;
+        padding: 1rem;
+        border-radius: 5px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .btn-tip-custom.active {
+        text-align: right;
+    }
+
+}
+
+.app-field--people {
+    grid-area: num;
+}
+
+.app-field--calculations {
+    grid-area: calc;
+    padding: 3rem 1.5rem;
+    border-radius: 2rem;
+
+    @include mediaq('lg') {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+    }
+
+    .app-field {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    p span {
+        display: block;
+        font-size: 1.6rem;
+    }
+
+    button {
+        text-transform: uppercase;
+        width: 95%;
+        text-align: center;
+        padding: .8rem;
+        border-radius: .7rem;
+        font-weight: 600;
+        letter-spacing: .5px;
+        margin-top: auto;
+    }
+}
+
+.tip-amount-text {
+    font-size: 3.5rem;
+}

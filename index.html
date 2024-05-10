@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPLITTER | A Tip App for You and Friends.</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/compiled_styles.css">
+</head>
+
+<body data-theme="light">
+    <div class="logo">
+        <img src="./images/logo.svg" alt="app logo for splitter">
+    </div>
+
+    <div class="theme-buttons">
+        <button class="btn-theme btn-theme-moon"><i class="fa fa-moon"></i></button>
+        <button class="btn-theme btn-theme-sun"><i class="fa fa-sun"></i></button>
+    </div>
+
+    <div class="app-wrapper">
+        <div class="app-fields">
+            <div class="app-field">
+                <p>Bill</p>
+                <img class="app-field-icon" src="./images/icon-dollar.svg" alt="dollar icon">
+                <input class="app-input" type="number" placeholder="0">
+            </div>
+             <div class="app-field">
+                <p>Select Tip %</p>
+                <div class="app-field-tips">
+                    <button class="btn-tip" data-tip="5">5%</button>
+                    <button class="btn-tip" data-tip="10">10%</button>
+                    <button class="btn-tip" data-tip="15">15%</button>
+                    <button class="btn-tip" data-tip="25">25%</button>
+                    <button class="btn-tip" data-tip="50">50%</button>
+                    <input type="number" class="btn-tip btn-tip-custom app-input" placeholder="Custom">
+                </div>
+
+             </div>   
+             <div class="app-field app-field--people">
+                <p>Number of People</p>
+                <img src="./images/icon-person.svg" alt="person profile icon" class="app-field-icon">
+                <input type="number" placeholder="0" class="app-input">
+             </div>
+             <div class="app-field--calculations">
+                <div class="app-field">
+                    <p>Tip Amount <span>/ person</span></p>
+
+                    <p class="tip-amount-text tip-per-person-amount">
+                        
+                        $0.00
+                    </p>
+                </div>
+
+                <div class="app-field">
+                    <p>Total <span>/ person</span></p>
+
+                    <p class="tip-amount-text total-per-person-amount">
+                        
+                        $0.00
+                    </p>
+                </div>
+
+                <button class="btn-reset">
+                    reset
+                </button>
+             </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+[data-theme=light] {
+  background-color: hsl(185, 41%, 84%);
+}
+[data-theme=light] .app-field--calculations {
+  background-color: hsl(183, 100%, 15%);
+}
+[data-theme=light] .app-field--calculations p:first-of-type {
+  color: hsl(0, 0%, 100%);
+}
+[data-theme=light] .app-field--calculations p:first-of-type span {
+  color: hsl(184, 14%, 56%);
+}
+[data-theme=light] .app-field--calculations button {
+  background-color: hsl(172, 67%, 45%);
+}
+[data-theme=light] .btn-tip {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+[data-theme=light] .btn-tip:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+[data-theme=light] .tip-amount-text {
+  color: hsl(172, 67%, 45%);
+}
+
+.logo {
+  order: 2;
+  width: 14rem;
+}
+.logo img {
+  width: 100%;
+}
+
+.theme-buttons {
+  order: 1;
+}
+@media screen and (min-width: 860px) {
+  .theme-buttons {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
+.app-wrapper {
+  order: 3;
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem 1.25rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .app-wrapper {
+    padding: 4rem;
+    width: 90%;
+    max-width: 84rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .app-wrapper {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .app-fields {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    grid-template-areas: "bill calc" "tip calc" "num calc";
+  }
+}
+
+.app-field {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.app-field p:first-of-type {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+.app-field .app-input {
+  border: 0;
+  background-color: hsl(189, 41%, 97%);
+  text-align: right;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.75rem;
+  color: hsl(186, 14%, 43%);
+  font-weight: 600;
+  border-radius: 5px;
+}
+.app-field .app-field-icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 7%;
+  top: 70%;
+}
+
+.app-field-tips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.app-field-tips .btn-tip {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.app-field-tips .btn-tip-custom.active {
+  text-align: right;
+}
+
+.app-field--people {
+  grid-area: num;
+}
+
+.app-field--calculations {
+  grid-area: calc;
+  padding: 3rem 1.5rem;
+  border-radius: 2rem;
+}
+@media screen and (min-width: 860px) {
+  .app-field--calculations {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+  }
+}
+.app-field--calculations .app-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.app-field--calculations p span {
+  display: block;
+  font-size: 1.6rem;
+}
+.app-field--calculations button {
+  text-transform: uppercase;
+  width: 95%;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: auto;
+}
+
+.tip-amount-text {
+  font-size: 3.5rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 2.4rem;
+  margin: 3rem 0 0;
+  display: grid;
+  gap: 4rem;
+  place-items: center;
+  align-items: end;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: 4rem 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input {
+  font-family: inherit;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=compiled_styles.css.map */

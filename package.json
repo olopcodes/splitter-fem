@@ -1,0 +1,16 @@
+{
+  "name": "sass-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --source-map scss/main.scss:css/compiled_styles.css",
+    "sass-prod": "sass --no-source-map --style=compressed scss/main.scss:css/compiled_styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.75.0"
+  }
+}
