@@ -1,6 +1,23 @@
 [data-theme="light"] {
     background-color: $color-light-gray-cyan;
 
+    .app-wrapper {
+        background-color: $color-white;
+    }
+
+    .theme-buttons {
+        button:first-of-type {
+            background-color: $color-white;
+            color: $color-very-dark-accent;
+    
+        }
+    
+        button:last-of-type {
+            color: $color-white;
+            background-color: $color-very-dark-accent;
+        }
+    
+    }
 
     .app-field--calculations {
         background-color: $color-very-dark-accent;
@@ -15,6 +32,10 @@
 
         button {
             background-color: $color-accent;
+            &:hover {
+                background-color: $color-light-gray-cyan;
+                color: $color-very-dark-accent;
+            }
         }
     }
 
@@ -30,5 +51,64 @@
 
     .tip-amount-text {
         color: $color-accent;
+    }
+}
+
+[data-theme="dark"] {
+    background-color: $color-very-dark-accent;
+
+    .app-wrapper {
+        background-color: $color-gray-cyan;
+    }
+
+    .theme-buttons {
+        button:first-of-type {
+            background-color: $color-accent;
+            color: $color-white;
+    
+        }
+    
+        button:last-of-type {
+            color: $color-very-dark-accent;
+            background-color: $color-white;
+        }
+    
+    }
+
+    .app-field--calculations {
+        background-color: $color-white;
+
+        p:first-of-type {
+            color: $color-very-dark-accent;
+        }
+
+        p:first-of-type span {
+            color: $color-gray-cyan;
+        }
+
+        button {
+            background-color: $color-very-dark-accent;
+            color: $color-very-light-gray-cyan;
+            &:hover {
+                background-color: $color-light-gray-cyan;
+                color: $color-very-dark-accent;
+            }
+        }
+    }
+
+    .app-field input {background-color: $color-white !important;}
+
+    .btn-tip {
+        background-color: $color-very-dark-accent;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-light-gray-cyan;
+            color: $color-very-dark-accent;
+        }
+    }
+
+    .tip-amount-text {
+        color: $color-very-dark-accent;
     }
 }

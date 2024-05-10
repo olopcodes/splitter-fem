@@ -2,6 +2,17 @@
 [data-theme=light] {
   background-color: hsl(185, 41%, 84%);
 }
+[data-theme=light] .app-wrapper {
+  background-color: hsl(0, 0%, 100%);
+}
+[data-theme=light] .theme-buttons button:first-of-type {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(183, 100%, 15%);
+}
+[data-theme=light] .theme-buttons button:last-of-type {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(183, 100%, 15%);
+}
 [data-theme=light] .app-field--calculations {
   background-color: hsl(183, 100%, 15%);
 }
@@ -13,6 +24,10 @@
 }
 [data-theme=light] .app-field--calculations button {
   background-color: hsl(172, 67%, 45%);
+}
+[data-theme=light] .app-field--calculations button:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
 }
 [data-theme=light] .btn-tip {
   background-color: hsl(183, 100%, 15%);
@@ -26,9 +41,60 @@
   color: hsl(172, 67%, 45%);
 }
 
+[data-theme=dark] {
+  background-color: hsl(183, 100%, 15%);
+}
+[data-theme=dark] .app-wrapper {
+  background-color: hsl(184, 14%, 56%);
+}
+[data-theme=dark] .theme-buttons button:first-of-type {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(0, 0%, 100%);
+}
+[data-theme=dark] .theme-buttons button:last-of-type {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(0, 0%, 100%);
+}
+[data-theme=dark] .app-field--calculations {
+  background-color: hsl(0, 0%, 100%);
+}
+[data-theme=dark] .app-field--calculations p:first-of-type {
+  color: hsl(183, 100%, 15%);
+}
+[data-theme=dark] .app-field--calculations p:first-of-type span {
+  color: hsl(184, 14%, 56%);
+}
+[data-theme=dark] .app-field--calculations button {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+}
+[data-theme=dark] .app-field--calculations button:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+[data-theme=dark] .app-field input {
+  background-color: hsl(0, 0%, 100%) !important;
+}
+[data-theme=dark] .btn-tip {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+[data-theme=dark] .btn-tip:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+[data-theme=dark] .tip-amount-text {
+  color: hsl(183, 100%, 15%);
+}
+
 .logo {
   order: 2;
   width: 14rem;
+}
+@media screen and (min-width: 860px) {
+  .logo {
+    align-self: end;
+  }
 }
 .logo img {
   width: 100%;
@@ -36,26 +102,34 @@
 
 .theme-buttons {
   order: 1;
+  width: 10rem;
+  background-color: hsl(172, 67%, 45%);
+  border-radius: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  text-align: center;
 }
 @media screen and (min-width: 860px) {
   .theme-buttons {
     position: absolute;
     top: 2rem;
-    right: 2rem;
+    right: 4rem;
   }
 }
 
 .app-wrapper {
   order: 3;
-  background-color: hsl(0, 0%, 100%);
   padding: 3rem 1.25rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   width: 100%;
+  align-self: end;
 }
 @media screen and (min-width: 480px) {
   .app-wrapper {
-    padding: 4rem;
+    align-self: start;
+    padding: 3rem;
     width: 90%;
     max-width: 84rem;
   }
@@ -64,16 +138,26 @@
   .app-wrapper {
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+@media screen and (min-width: 860px) {
+  .app-wrapper {
+    max-height: 60rem;
   }
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 768px) {
   .app-fields {
     display: grid;
-    gap: 2rem;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     grid-template-areas: "bill calc" "tip calc" "num calc";
+  }
+}
+@media screen and (min-width: 860px) {
+  .app-fields {
+    gap: 2rem;
   }
 }
 
@@ -84,6 +168,7 @@
 .app-field p:first-of-type {
   font-size: 2.25rem;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 .app-field .app-input {
   border: 0;
@@ -110,7 +195,8 @@
 }
 .app-field-tips .btn-tip {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
+  font-size: 2rem;
   border-radius: 5px;
   font-weight: 600;
   text-transform: uppercase;
@@ -122,13 +208,18 @@
 .app-field--people {
   grid-area: num;
 }
+@media screen and (min-width: 768px) {
+  .app-field--people {
+    margin-bottom: 0;
+  }
+}
 
 .app-field--calculations {
   grid-area: calc;
   padding: 3rem 1.5rem;
   border-radius: 2rem;
 }
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 768px) {
   .app-field--calculations {
     display: flex;
     flex-direction: column;
@@ -174,6 +265,7 @@ html, body {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  transition: 0.25s ease-in-out;
 }
 
 body {
@@ -183,12 +275,16 @@ body {
   display: grid;
   gap: 4rem;
   place-items: center;
-  align-items: end;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   body {
     margin: 4rem 0;
+  }
+}
+@media screen and (min-width: 860px) {
+  body {
+    margin: 0;
   }
 }
 
