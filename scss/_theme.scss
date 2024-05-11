@@ -22,11 +22,11 @@
     .app-field--calculations {
         background-color: $color-very-dark-accent;
 
-        p:first-of-type {
+       h4 {
             color: $color-white;
         }
 
-        p:first-of-type span {
+       h4 span {
             color: $color-gray-cyan;
         }
 

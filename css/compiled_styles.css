@@ -16,10 +16,10 @@
 [data-theme=light-theme] .app-field--calculations {
   background-color: hsl(183, 100%, 15%);
 }
-[data-theme=light-theme] .app-field--calculations p:first-of-type {
+[data-theme=light-theme] .app-field--calculations h4 {
   color: hsl(0, 0%, 100%);
 }
-[data-theme=light-theme] .app-field--calculations p:first-of-type span {
+[data-theme=light-theme] .app-field--calculations h4 span {
   color: hsl(184, 14%, 56%);
 }
 [data-theme=light-theme] .app-field--calculations button {
@@ -165,7 +165,7 @@
     margin-bottom: 0;
   }
 }
-.app-field p:first-of-type {
+.app-field h3 {
   font-size: 2.25rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -233,7 +233,7 @@
   gap: 2rem;
   margin-bottom: 2rem;
 }
-.app-field--calculations p span {
+.app-field--calculations h4 span {
   display: block;
   font-size: 1.6rem;
 }
@@ -300,6 +300,18 @@ input {
 button {
   all: unset;
   cursor: pointer;
+}
+
+.error {
+  font-size: 1.2rem;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  color: rgb(181, 21, 21);
+}
+
+.hide {
+  display: none;
 }
 
 /*# sourceMappingURL=compiled_styles.css.map */

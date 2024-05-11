@@ -25,12 +25,15 @@
     <div class="app-wrapper">
         <div class="app-fields">
             <div class="app-field">
-                <p>Bill</p>
+                <h3>Bill</h3>
+                <p class="error hide">value can't be zero</p>
                 <img class="app-field-icon" src="./images/icon-dollar.svg" alt="dollar icon">
                 <input id="bill-amount" class="app-input" type="number" placeholder="0" min="1">
             </div>
              <div class="app-field">
-                <p>Select Tip %</p>
+                <h3>Select Tip %</h3>
+                <p class="error hide">value can't be zero</p>
+
                 <div class="app-field-tips">
                     <button class="btn-tip" data-tip="5">5%</button>
                     <button class="btn-tip" data-tip="10">10%</button>
@@ -42,13 +45,15 @@
 
              </div>   
              <div class="app-field app-field--people">
-                <p>Number of People</p>
+                <h3>Number of People</h3>
+                <p class="error hide">value can't be zero</p>
+
                 <img src="./images/icon-person.svg" alt="person profile icon" class="app-field-icon">
                 <input id="number-of-people" type="number" placeholder="0" class="app-input" min="1" max="10">
              </div>
              <div class="app-field--calculations">
                 <div class="app-field">
-                    <p>Tip Amount <span>/ person</span></p>
+                    <h4>Tip Amount <span>/ person</span></>
 
                     <p class="tip-amount-text tip-per-person-amount">
                         
@@ -57,7 +62,7 @@
                 </div>
 
                 <div class="app-field">
-                    <p>Total <span>/ person</span></p>
+                    <h4>Total <span>/ person</span></h4>
 
                     <p class="tip-amount-text total-per-person-amount">
                         

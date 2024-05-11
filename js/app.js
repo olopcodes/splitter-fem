@@ -38,11 +38,16 @@ $(document).ready(function () {
     toggleTheme();
 });
 
-function checkForZeroes (value) {
+function checkForZeroes (value, target) {
     // make an error message appear and disappear
     // check color of input to invalid
     if(value=== 0) {
-        alert(`value can't be zero`);
+        const div = $(target).closest('div');
+        $(div).find('.error').removeClass('hide')
+        setTimeout(() => {
+            $(div).find('.error').addClass('hide');
+        }, 1200);
+        $(target).val('');
         return true;
     }
 };
@@ -57,8 +62,8 @@ function getCalculations() {
     }
 }
 
-function setupValues(id, value) {
-    if(!checkForZeroes(value)) {
+function setupValues(id, value,target) {
+    if(!checkForZeroes(value, target)) {
 
         if(id === 'bill-amount') {
             splitter.billAmount = value;
@@ -99,9 +104,11 @@ function toggleTheme() {
 
 function app () {
     $('input').on('input', e => {
-        const inputID = $(e.target).attr('id');
-        const inputValue = Number($(e.target).val()); 
-        setupValues(inputID, inputValue);
+        const target = $(e.target);
+        console.log(target)
+        const inputID = $(target).attr('id');
+        const inputValue = Number($(target).val()); 
+        setupValues(inputID, inputValue, target);
 
         // run this when all the values needed are stored
         getCalculations();

@@ -57,3 +57,15 @@ button {
     all: unset;
     cursor: pointer;
 }
+
+.error {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    color: rgb(181, 21, 21);
+}
+
+.hide {
+    display: none;
+}
