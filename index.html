@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="css/compiled_styles.css">
 </head>
 
-<body data-theme="light">
+<body data-theme="light-theme">
     <div class="logo">
         <img src="./images/logo.svg" alt="app logo for splitter">
     </div>
 
     <div class="theme-buttons">
-        <button class="btn-theme btn-theme-moon"><i class="fa fa-moon"></i></button>
-        <button class="btn-theme btn-theme-sun"><i class="fa fa-sun"></i></button>
+        <button id="dark-theme" class="btn-theme btn-theme-moon"><i class="fa fa-moon"></i></button>
+        <button id="light-theme" class="btn-theme btn-theme-sun"><i class="fa fa-sun"></i></button>
     </div>
 
     <div class="app-wrapper">
@@ -27,7 +27,7 @@
             <div class="app-field">
                 <p>Bill</p>
                 <img class="app-field-icon" src="./images/icon-dollar.svg" alt="dollar icon">
-                <input class="app-input" type="number" placeholder="0" min="1">
+                <input id="bill-amount" class="app-input" type="number" placeholder="0" min="1">
             </div>
              <div class="app-field">
                 <p>Select Tip %</p>
@@ -37,14 +37,14 @@
                     <button class="btn-tip" data-tip="15">15%</button>
                     <button class="btn-tip" data-tip="25">25%</button>
                     <button class="btn-tip" data-tip="50">50%</button>
-                    <input type="number" class="btn-tip btn-tip-custom app-input" placeholder="Custom" min="0">
+                    <input id="custom-tip-amount" type="number" class="btn-tip btn-tip-custom app-input" placeholder="Custom" min="0">
                 </div>
 
              </div>   
              <div class="app-field app-field--people">
                 <p>Number of People</p>
                 <img src="./images/icon-person.svg" alt="person profile icon" class="app-field-icon">
-                <input type="number" placeholder="0" class="app-input" min="1" max="10">
+                <input id="number-of-people" type="number" placeholder="0" class="app-input" min="1" max="10">
              </div>
              <div class="app-field--calculations">
                 <div class="app-field">
@@ -65,7 +65,7 @@
                     </p>
                 </div>
 
-                <button class="btn-reset">
+                <button id="reset" class="btn-reset">
                     reset
                 </button>
              </div>

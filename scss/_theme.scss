@@ -1,4 +1,4 @@
-[data-theme="light"] {
+[data-theme="light-theme"] {
     background-color: $color-light-gray-cyan;
 
     .app-wrapper {
@@ -54,7 +54,7 @@
     }
 }
 
-[data-theme="dark"] {
+[data-theme="dark-theme"] {
     background-color: $color-very-dark-accent;
 
     .app-wrapper {

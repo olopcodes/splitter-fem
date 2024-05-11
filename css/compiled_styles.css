@@ -1,89 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-[data-theme=light] {
+[data-theme=light-theme] {
   background-color: hsl(185, 41%, 84%);
 }
-[data-theme=light] .app-wrapper {
+[data-theme=light-theme] .app-wrapper {
   background-color: hsl(0, 0%, 100%);
 }
-[data-theme=light] .theme-buttons button:first-of-type {
+[data-theme=light-theme] .theme-buttons button:first-of-type {
   background-color: hsl(0, 0%, 100%);
   color: hsl(183, 100%, 15%);
 }
-[data-theme=light] .theme-buttons button:last-of-type {
+[data-theme=light-theme] .theme-buttons button:last-of-type {
   color: hsl(0, 0%, 100%);
   background-color: hsl(183, 100%, 15%);
 }
-[data-theme=light] .app-field--calculations {
+[data-theme=light-theme] .app-field--calculations {
   background-color: hsl(183, 100%, 15%);
 }
-[data-theme=light] .app-field--calculations p:first-of-type {
+[data-theme=light-theme] .app-field--calculations p:first-of-type {
   color: hsl(0, 0%, 100%);
 }
-[data-theme=light] .app-field--calculations p:first-of-type span {
+[data-theme=light-theme] .app-field--calculations p:first-of-type span {
   color: hsl(184, 14%, 56%);
 }
-[data-theme=light] .app-field--calculations button {
+[data-theme=light-theme] .app-field--calculations button {
   background-color: hsl(172, 67%, 45%);
 }
-[data-theme=light] .app-field--calculations button:hover {
+[data-theme=light-theme] .app-field--calculations button:hover {
   background-color: hsl(185, 41%, 84%);
   color: hsl(183, 100%, 15%);
 }
-[data-theme=light] .btn-tip {
+[data-theme=light-theme] .btn-tip {
   background-color: hsl(183, 100%, 15%);
   color: hsl(0, 0%, 100%);
 }
-[data-theme=light] .btn-tip:hover {
+[data-theme=light-theme] .btn-tip:hover {
   background-color: hsl(185, 41%, 84%);
   color: hsl(183, 100%, 15%);
 }
-[data-theme=light] .tip-amount-text {
+[data-theme=light-theme] .tip-amount-text {
   color: hsl(172, 67%, 45%);
 }
 
-[data-theme=dark] {
+[data-theme=dark-theme] {
   background-color: hsl(183, 100%, 15%);
 }
-[data-theme=dark] .app-wrapper {
+[data-theme=dark-theme] .app-wrapper {
   background-color: hsl(184, 14%, 56%);
 }
-[data-theme=dark] .theme-buttons button:first-of-type {
+[data-theme=dark-theme] .theme-buttons button:first-of-type {
   background-color: hsl(172, 67%, 45%);
   color: hsl(0, 0%, 100%);
 }
-[data-theme=dark] .theme-buttons button:last-of-type {
+[data-theme=dark-theme] .theme-buttons button:last-of-type {
   color: hsl(183, 100%, 15%);
   background-color: hsl(0, 0%, 100%);
 }
-[data-theme=dark] .app-field--calculations {
+[data-theme=dark-theme] .app-field--calculations {
   background-color: hsl(0, 0%, 100%);
 }
-[data-theme=dark] .app-field--calculations p:first-of-type {
+[data-theme=dark-theme] .app-field--calculations p:first-of-type {
   color: hsl(183, 100%, 15%);
 }
-[data-theme=dark] .app-field--calculations p:first-of-type span {
+[data-theme=dark-theme] .app-field--calculations p:first-of-type span {
   color: hsl(184, 14%, 56%);
 }
-[data-theme=dark] .app-field--calculations button {
+[data-theme=dark-theme] .app-field--calculations button {
   background-color: hsl(183, 100%, 15%);
   color: hsl(189, 41%, 97%);
 }
-[data-theme=dark] .app-field--calculations button:hover {
+[data-theme=dark-theme] .app-field--calculations button:hover {
   background-color: hsl(185, 41%, 84%);
   color: hsl(183, 100%, 15%);
 }
-[data-theme=dark] .app-field input {
+[data-theme=dark-theme] .app-field input {
   background-color: hsl(0, 0%, 100%) !important;
 }
-[data-theme=dark] .btn-tip {
+[data-theme=dark-theme] .btn-tip {
   background-color: hsl(183, 100%, 15%);
   color: hsl(0, 0%, 100%);
 }
-[data-theme=dark] .btn-tip:hover {
+[data-theme=dark-theme] .btn-tip:hover {
   background-color: hsl(185, 41%, 84%);
   color: hsl(183, 100%, 15%);
 }
-[data-theme=dark] .tip-amount-text {
+[data-theme=dark-theme] .tip-amount-text {
   color: hsl(183, 100%, 15%);
 }
 
