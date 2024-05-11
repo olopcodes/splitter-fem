@@ -143,7 +143,7 @@
 }
 @media screen and (min-width: 860px) {
   .app-wrapper {
-    max-height: 60rem;
+    max-height: 52rem;
   }
 }
 
@@ -151,19 +151,19 @@
   .app-fields {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 1.5rem 4rem;
     grid-template-areas: "bill calc" "tip calc" "num calc";
-  }
-}
-@media screen and (min-width: 860px) {
-  .app-fields {
-    gap: 2rem;
   }
 }
 
 .app-field {
   position: relative;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .app-field {
+    margin-bottom: 0;
+  }
 }
 .app-field p:first-of-type {
   font-size: 2.25rem;
@@ -195,7 +195,7 @@
 }
 .app-field-tips .btn-tip {
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   font-size: 2rem;
   border-radius: 5px;
   font-weight: 600;
@@ -223,7 +223,7 @@
   .app-field--calculations {
     display: flex;
     flex-direction: column;
-    padding: 4rem;
+    padding: 3rem;
   }
 }
 .app-field--calculations .app-field {

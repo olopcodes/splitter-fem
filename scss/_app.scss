@@ -50,7 +50,7 @@
     }
 
     @include mediaq(lg) {
-        max-height: 60rem;
+        max-height: 52rem;
     }
 }
 
@@ -58,21 +58,21 @@
     @include mediaq('md') {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        gap: 1.5rem 4rem;
         grid-template-areas: 
                 "bill calc"
                 "tip calc"
                 "num calc";
     }
 
-    @include mediaq('lg') {
-        gap: 2rem;
-    }
 }
 
 .app-field {
     position: relative;
     margin-bottom: 2rem;
+    @include mediaq(md){
+        margin-bottom: 0;
+    }
 
     p:first-of-type {
         font-size: 2.25rem;
@@ -108,7 +108,7 @@
 
     .btn-tip {
         text-align: center;
-        padding: 1.5rem 1rem;
+        padding: 1rem;
         font-size: 2rem;
         border-radius: 5px;
         font-weight: 600;
@@ -137,7 +137,7 @@
     @include mediaq('md') {
         display: flex;
         flex-direction: column;
-        padding: 4rem;
+        padding: 3rem;
     }
 
     .app-field {
